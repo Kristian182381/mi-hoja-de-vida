@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="HojaDeVida.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor">
+        <!-- Barra lateral -->
+        <aside id="barra-lateral">
+            <img src="Imagenes/Kristian.jpeg" alt="Foto de perfil" id="foto-perfil">
+            <h2>Contacto <i class="fas fa-address-book"></i></h2>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> kristian.olk@gmail.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 3157143103</p>
+            <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kristian-martinez-299883339/" target="_blank">linkedin.com/in/kristian</a></p>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main id="contenido-principal">
+            <header>
+                <h1>Kristian Ferney Martinez Ballesteros</h1>
+                <p>Desarrollador de Software | Apasionado por el código y la innovación</p>
+            </header>
+
+
+<!--Formacion Academica -->
+            <section>
+                <h2>Sobre Mí</h2>
+                <p>Soy un joven de 24 años apasionado por el desarrollo de software, actualmente en formación como Técnico en Desarrollo de Aplicaciones para Dispositivos Móviles. Busco una empresa que me patrocine para realizar mis prácticas profesionales, donde pueda crecer junto a un equipo de trabajo dinámico y aportar con mis conocimientos y habilidades. Estoy comprometido con la excelencia y motivado por la oportunidad de contribuir al desarrollo de soluciones innovadoras en el ámbito tecnológico.</p>
+                <section>
+                    <h2>Formación Académica</h2>
+                    <ul>
+                        <li><strong>2017 - Colegio</strong> Obtengo titulo de Bachiller</li>
+                        <li><strong>2017 - Colegio</strong> Obtengo titulo de Tecnico en contabilidad</li>
+                        <li><strong>2023 - Academia</strong> Obtengo titulo de un diplomado en ecxel basico</li>
+                        <li><strong>2024 - Bootcamp</strong> Obtengo titulo de un Bootcamp en programacion nivel basico </li>
+                        <li><strong>2024 - Presente:</strong> Técnico en Desarrollo de Aplicaciones para Dispositivos Móviles (SENA) y estoy en proceso de obtener mi titulo.</li>
+                    </ul>
+                    <h3>Certificados</h3>
+                    <div id="galeria-certificados">
+                        <img src="imagenes/Bachiller.jpg" alt="Certificado 1" class="certificado">
+                        <img src="Imagenes/Contabilidad.jpg" alt="Certificado 2" class="certificado">
+                        <img src="Imagenes//Exel.jpg" alt="Certificado 3" class="certificado">
+                        <img src="Imagenes/ProgramacionBasico.jpg" alt="Certificado 4 " class="certificado"
+                    </div>
+                
+                    <!-- Modal para mostrar certificado en grande -->
+                    <div id="modal" class="oculto">
+                        <span id="cerrar">&times;</span>
+                        <img id="imagen-modal" src="" alt="Certificado ampliado">
+                    </div>
+                </section>
+
+<!--Perfil Profecional-->
+<section>
+    <h2>Perfil Laboral</h2>
+    <p>
+        Soy un joven de 24 años con experiencia laboral en diversas áreas, lo que me ha permitido desarrollar habilidades clave como el servicio al cliente, manejo de caja, organización y trabajo en equipo. En el ámbito comercial, trabajé en Megaredil, un supermercado donde desempeñé funciones como el orden y aseo de pasillos y bodega, recepción en caja y atención al cliente, experiencia respaldada con certificado. También he adquirido experiencia en el sector agrícola, colaborando en el negocio familiar de mi padre como agricultor y comercializador de piña, desarrollando habilidades en logística y ventas. Actualmente, laboro en el asadero Rapicali, realizando tareas de atención al cliente y manejo de caja. Mi perfil profesional combina adaptabilidad, compromiso y una orientación al aprendizaje continuo, lo que me permite enfrentar nuevos desafíos con entusiasmo.
+    </p>
+    <h2>Experiencia</h2>
+    <div id="galeria-laboral">
+        <figure>
+            <img src="imagenes/MegaRedil.jpg" alt="Certificado Megaredil" class="certificado">
+            <figcaption>Megaredil - Orden y aseo, recepción en caja y atención al cliente.</figcaption>
+        </figure>
+    </div>
+
+    <!-- Modal para ampliar la imagen -->
+    <div id="modal-laboral" class="oculto">
+        <span id="cerrar-laboral">&times;</span>
+        <img id="imagen-modal-laboral" src="" alt="Certificado ampliado">
+    </div>
+</section>
+
+
+<!--Herramientas y Tecnologías-->
+<section>
+    <h2>Tecnologías que manejo</h2>
+    <div class="tecnologias-icones">
+        <div class="tecnologia">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+            <span class="nivel">(Intermedio)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+            <span class="nivel">(Intermedio)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+            <span class="nivel">(Básico)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+            <span class="nivel">(Intermedio)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+            <span class="nivel">(Básico)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fas fa-fire"></i>
+            <span>Firebase</span>
+            <span class="nivel">(Intermedio)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+            <span class="nivel">(basico)</span>
+        </div>
+        <div class="tecnologia">
+            <i class="fab fa-android"></i> <!-- Ícono de Android Studio -->
+            <span>Android Studio</span>
+            <span class="nivel">(Intermedio)</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+            <section>
+                <h2>Proyectos Destacados</h2>
+                <ul>
+                    <li><strong>ControlyConfección:</strong> Proyecto para gestionar recursos textiles, utilizando Android Studio y Firebase.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Intereses Personales</h2>
+                <p>Soy una persona que disfruta de diversas actividades en su tiempo libre. Me encanta escuchar música, lo cual me ayuda a desconectar y disfrutar del momento. También suelo leer de vez en cuando, lo que me permite expandir mis conocimientos y explorar nuevos mundos. En cuanto a entretenimiento, soy aficionado a las artes marciales mixtas, un deporte que admiro por su disciplina y habilidad. Además, me gusta mantenerme activo entrenando y mejorando mi condición física. Por último, recientemente he descubierto un gran interés por la programación, una pasión que me motiva a seguir aprendiendo y creando soluciones tecnológicas.</p>
+            </section>
+
+        </main>
+    </div>
+    <script src="HojaDeVida.js"></script>
+</body>
+</html>

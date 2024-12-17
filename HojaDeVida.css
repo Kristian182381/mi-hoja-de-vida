@@ -1,0 +1,275 @@
+/* Reseteo básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+#contenedor {
+    display: flex; /* Flexbox para alinear la barra lateral y el contenido */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+/* Barra lateral */
+#barra-lateral {
+    width: 300px; /* Ancho fijo para la barra lateral */
+    background-color: #2c3e50; /* Color de fondo */
+    color: #ecf0f1; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+#foto-perfil {
+    width: 100%; /* Imagen ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Encabezados y texto en la barra lateral */
+#barra-lateral h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+#barra-lateral p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+/* Contenido principal */
+#contenido-principal {
+    flex: 1; /* Ocupa todo el espacio restante */
+    padding: 40px; /* Espaciado interno */
+    box-sizing: border-box;
+}
+
+#contenido-principal header h1 {
+    font-size: 2em;
+    color: #2c3e50; /* Color oscuro para contraste */
+}
+
+#contenido-principal p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #34495e;
+}
+
+#contenido-principal section h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #2980b9; /* Color destacado */
+}
+
+#contenido-principal ul {
+    list-style-type: disc; /* Viñetas */
+    margin-left: 20px; /* Desplaza las viñetas */
+
+}
+
+
+/* edicion de iconos de contacto */
+#barra-lateral h2 {
+    display: flex; /* Usa flexbox para alinear ícono y texto */
+    align-items: center; /* Centra ícono y texto verticalmente */
+    font-size: 1.5em; /* Tamaño del texto */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+#barra-lateral h2 i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #ecf0f1; /* Color del ícono */
+}
+
+
+#barra-lateral p i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #ecf0f1; /* Color de los íconos */
+    font-size: 1.2em; /* Tamaño de los íconos */
+    vertical-align: middle; /* Alineación vertical */
+}
+
+#barra-lateral a {
+    color: #ecf0f1; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+#barra-lateral a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse */
+}
+
+
+/* Contenedor de la galería de certificados */
+#galeria-certificados {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si hay muchas */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+.certificado {
+    width: 100px; /* Tamaño pequeño para vista previa */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    border: 2px solid #ecf0f1; /* Bordes ligeros */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: transform 0.3s ease; /* Animación de escala */
+}
+
+.certificado:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+
+/* Modal para ampliar certificados */
+#modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente oscuro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+#modal img {
+    max-width: 90%; /* Imagen ocupa el 90% del ancho disponible */
+    max-height: 90%; /* Imagen ocupa el 90% de la altura disponible */
+    border: 3px solid #fff; /* Borde blanco alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1001; /* Encima de la imagen */
+    transition: color 0.3s ease;
+}
+
+#cerrar:hover {
+    color: #ff6b6b; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Estilos Certificados de Trabajo*/
+/* Galería laboral */
+#galeria-laboral {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#galeria-laboral figure {
+    text-align: center;
+    cursor: pointer;
+}
+
+#galeria-laboral img {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#galeria-laboral img:hover {
+    transform: scale(1.05);
+}
+
+#galeria-laboral figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Modal para galería laboral */
+#modal-laboral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#modal-laboral img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#modal-laboral.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#cerrar-laboral {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+
+
+/* Tecnologías*/
+.tecnologias-icones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.tecnologia {
+    text-align: center;
+    flex: 1 1 120px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para efectos */
+}
+
+.tecnologia i {
+    font-size: 3em;
+    color: #3498db;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para el ícono */
+}
+
+.tecnologia span {
+    display: block;
+    margin-top: 5px;
+}
+
+.tecnologia .nivel {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Efecto al pasar el mouse sobre los íconos */
+.tecnologia:hover i {
+    transform: scale(1.2); /* Aumentar el tamaño del ícono */
+    color: #e74c3c; /* Cambiar color del ícono */
+}
+
+/* Efecto de la tecnología al pasar el mouse */
+.tecnologia:hover {
+    transform: translateY(-10px); /* Levantar la tecnología hacia arriba */
+}
+
