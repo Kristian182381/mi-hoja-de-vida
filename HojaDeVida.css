@@ -306,12 +306,3 @@ body {
 
 
 
-/*MediaQueary*/
-@media (max-width: 768px) {
-    #contenedor {
-        flex-direction: column; /* Cambia de filas a columnas */
-    }
-    #barra-lateral {
-        width: 100%; /* Barra lateral ocupa todo el ancho */
-    }
-}
