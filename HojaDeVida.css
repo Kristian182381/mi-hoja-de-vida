@@ -305,13 +305,51 @@ body {
 }
 
 
+/* Estilos de la tabla de referencias */
+#tabla-referencias th {
+    background-color: #2c3e50; /* Fondo oscuro para encabezados */
+    color: #ecf0f1; /* Texto claro para contraste */
+    padding: 10px;
+}
 
-/*MediaQueary*/
-@media (max-width: 768px) {
-    #contenedor {
-        flex-direction: column; /* Cambia de filas a columnas */
+#tabla-referencias th, #tabla-referencias td {
+    border: 1px solid #bdc3c7; /* Añade un borde a las celdas */
+    padding: 10px;
+    color: #000000; /* Cambia este valor al color que desees */
+}
+
+
+#tabla-referencias tr:hover {
+    background-color: #f2f2f2; /* Fondo gris al pasar el mouse */
+}
+
+/* Estilo de la tabla de referencias en dispositivos móviles */
+@media screen and (max-width: 600px) {
+    #tabla-referencias {
+        border: 0; /* Quita el borde de la tabla */
     }
-    #barra-lateral {
-        width: 100%; /* Barra lateral ocupa todo el ancho */
+
+    #tabla-referencias thead {
+        display: none; /* Oculta la fila de encabezados */
+    }
+
+    #tabla-referencias tr {
+        margin-bottom: 20px; /* Espacio entre las filas */
+        display: block; /* Convierte cada fila en un bloque */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    }
+
+    #tabla-referencias td {
+        display: block; /* Convierte cada celda en un bloque */
+        text-align: right; /* Alinea el texto a la derecha */
+        font-size: 0.8em; /* Reduce el tamaño del texto */
+        color: #000000; /* Asegura que el color sea negro en dispositivos móviles */
+    }
+
+    #tabla-referencias td::before {
+        content: attr(data-label); /* Muestra el contenido del atributo data-label */
+        float: left; /* Alinea el texto a la izquierda */
+        font-weight: bold; /* Texto en negrita */
     }
 }
+
